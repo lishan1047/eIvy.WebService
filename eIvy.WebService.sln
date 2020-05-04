@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eIvy.WebService.Client", "eIvy.WebService.Client\eIvy.WebService.Client.csproj", "{777E99A7-91F1-4EF3-8667-D42A1296F683}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eIvy.WebService.Client", "eIvy.WebService.Client\eIvy.WebService.Client.csproj", "{4D023532-150F-4156-A920-38714C5FAEF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{777E99A7-91F1-4EF3-8667-D42A1296F683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{777E99A7-91F1-4EF3-8667-D42A1296F683}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{777E99A7-91F1-4EF3-8667-D42A1296F683}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{777E99A7-91F1-4EF3-8667-D42A1296F683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D023532-150F-4156-A920-38714C5FAEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D023532-150F-4156-A920-38714C5FAEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D023532-150F-4156-A920-38714C5FAEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D023532-150F-4156-A920-38714C5FAEF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
