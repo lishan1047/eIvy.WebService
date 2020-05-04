@@ -2,6 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>Lishan</Authors>
+    <Copyright>Lishan</Copyright>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseUrl>https://mit-license.org</PackageLicenseUrl>
+    <Owners>Lishan</Owners>
+    <PackageProjectUrl>https://github.com/lishan1047/eIvy.WebService</PackageProjectUrl>
+    <PackageReleaseNotes>Invoking for the accessing service from eIvy platform applications.</PackageReleaseNotes>
+    <Summary>Provide the web service on clients from eIvy platform applications.</Summary>
+    <PackageTags>eIvy Web Service Client</PackageTags>
+    <Title>eIvy Web Service Client</Title>
+    <Description>Provide the web service on clients from eIvy platform applications.</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
 </Project>
