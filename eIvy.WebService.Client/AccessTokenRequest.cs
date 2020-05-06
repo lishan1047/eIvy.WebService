@@ -75,7 +75,7 @@ namespace eIvy.WebService.Client
         /// <returns>The access token.</returns>
         public async virtual Task<AccessToken> GetAccessTokenAsync()
         {
-            HttpClient client = new HttpClient();
+            HttpClient client = WebUtility.GetHttpClient();
 
             HttpResponseMessage resp = await client.GetAsync(this.RequestUrl);
 

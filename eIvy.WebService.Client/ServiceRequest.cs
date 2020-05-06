@@ -10,12 +10,6 @@ namespace eIvy.WebService.Client
     /// </summary>
     public abstract class ServiceRequest
     {
-        private static readonly HttpClient _httpClient;
-
-        static ServiceRequest()
-        {
-            _httpClient = new HttpClient();
-        }
         /// <summary>
         /// Get the http client for requesting.
         /// </summary>
@@ -23,7 +17,7 @@ namespace eIvy.WebService.Client
         {
             get
             {
-                return _httpClient;
+                return WebUtility.GetHttpClient();
             }
         }
 

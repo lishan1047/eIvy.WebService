@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
 
 namespace eIvy.WebService.Client
@@ -56,6 +57,20 @@ namespace eIvy.WebService.Client
             }
 
             return sb.ToString();
+        }
+
+        private static HttpClient _httpClient;
+        /// <summary>
+        /// Get the app global http client object.
+        /// </summary>
+        /// <returns>The global Http Client object.</returns>
+        public static HttpClient GetHttpClient()
+        {
+            if(_httpClient == null)
+            {
+                _httpClient = new HttpClient();
+            }
+            return _httpClient;
         }
     }
 }
