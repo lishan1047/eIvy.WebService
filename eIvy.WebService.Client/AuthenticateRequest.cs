@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+
 namespace eIvy.WebService.Client
 {
     /// <summary>
@@ -44,8 +46,25 @@ namespace eIvy.WebService.Client
                 if(!string.IsNullOrEmpty(umJson))
                 {
                     r.UserMap = Newtonsoft.Json.JsonConvert.DeserializeObject<UserMappingInfo>(umJson);
+                    r.UserMap.UserName = r.UserInfo.UserName;
                 }
             }
+
+            return r;
+        }
+
+        /// <summary>
+        /// Authenticate user account by password.
+        /// </summary>
+        /// <param name="password">The password.</param>
+        /// <returns>The authenticating result.</returns>
+        public async Task<AuthenticateResult> AuthenticateAsync(string password)
+        {
+            AuthenticateResult r = await
+                this.InvokeAsync(new System.Collections.Generic.Dictionary<string, object>
+                {
+                    ["Password"] = password
+                }) as AuthenticateResult;
 
             return r;
         }

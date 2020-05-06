@@ -51,7 +51,5 @@ namespace eIvy.WebService.Client
                 return string.Format("{0}{1}", this.AccessToken.BaseUrl, this.ServiceUrlSection);
             }
         }
-
-        
     }
 }

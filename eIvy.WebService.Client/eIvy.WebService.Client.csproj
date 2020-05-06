@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>0.1.2</PackageVersion>
     <Authors>Lishan</Authors>
     <Copyright>Lishan</Copyright>
     <NeutralLanguage>en</NeutralLanguage>
