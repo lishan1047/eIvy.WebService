@@ -93,6 +93,8 @@ namespace eIvy.WebService.Client
                     }
                     AccessToken token = Newtonsoft.Json.JsonConvert.DeserializeObject<AccessToken>(c);
 
+                    token.BaseUrl = this.BaseUrl;
+
                     return token;
                 }
             }

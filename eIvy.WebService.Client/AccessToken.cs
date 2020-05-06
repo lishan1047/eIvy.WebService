@@ -16,6 +16,16 @@ namespace eIvy.WebService.Client
         }
 
         /// <summary>
+        /// Get or set the access request base url.
+        /// </summary>
+        [Newtonsoft.Json.JsonIgnore]
+        public string BaseUrl
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Get the created time of the access token.
         /// </summary>
         [Newtonsoft.Json.JsonIgnore]

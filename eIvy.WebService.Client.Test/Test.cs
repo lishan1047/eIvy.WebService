@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace eIvy.WebService.Client.Test
@@ -16,6 +17,14 @@ namespace eIvy.WebService.Client.Test
                 "Administrator", "Administrators");
 
                 AccessToken token = await fr.GetAccessTokenAsync();
+
+                AuthenticateRequest authen = new AuthenticateRequest(token);
+
+                Dictionary<string, object> dict = new Dictionary<string, object>
+                {
+                    ["Password"] = "Tan@304312"
+                };
+                AuthenticateResult r = await authen.InvokeAsync(dict) as AuthenticateResult;
 
             }).GetAwaiter().GetResult();
         }
