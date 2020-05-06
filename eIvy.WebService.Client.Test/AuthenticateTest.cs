@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace eIvy.WebService.Client.Test
 {
     [TestFixture()]
-    public class Test
+    public class AuthenticateTest
     {
         [Test()]
         public void TestCase()
@@ -22,7 +22,7 @@ namespace eIvy.WebService.Client.Test
 
                 Dictionary<string, object> dict = new Dictionary<string, object>
                 {
-                    ["Password"] = "Tan@304312"
+                    ["Password"] = "xxxxxxx"
                 };
                 AuthenticateResult r = await authen.InvokeAsync(dict) as AuthenticateResult;
 
